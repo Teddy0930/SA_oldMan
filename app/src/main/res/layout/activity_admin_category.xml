@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategoryActivity"
+    android:background="@drawable/admin_bg">
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="50dp"
+        android:id="@+id/user_profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:src="@drawable/profile"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        android:elevation="10dp"/>
+
+    app:cardElevation="0dp"
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="NAME"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:paddingTop="40dp"
+                    android:textColor="@color/admintextcolor"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="MONEY"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:paddingTop="40dp"
+                    android:textColor="@color/admintextcolor"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+    <TextView
+        android:id="@+id/user_profile_name"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:paddingTop="20dp"
+        android:text="admname"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/admincolor"/>
+
+    <TextView
+        android:id="@+id/user_profile_money"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:paddingTop="20dp"
+        android:text="adm$$$"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/admincolor"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right">
+
+    <Button
+        android:id="@+id/my_event_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/admin_button"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="130dp"
+        android:textSize="25dp"
+        android:text="我的活動" />
+
+    <Button
+        android:id="@+id/my_order_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/admin_button"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="130dp"
+        android:text="我的訂單" />
+
+    <Button
+        android:id="@+id/admin_setting_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/admin_button"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="130dp"
+        android:text="廠商設定" />
+
+    <Button
+        android:id="@+id/upload_event_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/admin_button"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="130dp"
+        android:text="上傳活動" />
+
+    <Button
+        android:id="@+id/upload_product_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/admin_button"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="130dp"
+        android:text="上傳商品" />
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/admin_button"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="130dp"
+            android:text="廠商登出" />
+
+
+    </ViewFlipper>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="previous"
+        android:onClick="previous"
+        android:textSize="15dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/viewflipper_button"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="   What do you want to do now?"
+        android:textColor="@color/admintextcolor"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="540dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="NEXT"
+        android:onClick="next"
+        android:textSize="15dp"
+        android:layout_marginTop="520dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/viewflipper_button"/>
+
+</RelativeLayout>

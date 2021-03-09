@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/event"
+            android:iconTint="@android:color/white"
+            android:title="活動列表" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/product"
+            android:iconTint="@android:color/white"
+            android:title="商品兌換" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/record"
+            android:iconTint="@android:color/white"
+            android:title="交易紀錄" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/user"
+            android:iconTint="@android:color/white"
+            android:title="個人設定" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/delivery"
+            android:iconTint="@android:color/white"
+            android:title="送紅包" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/receive"
+            android:iconTint="@android:color/white"
+            android:title="收紅包" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:iconTint="@android:color/white"
+            android:title="登出" />
+    </group>
+
+
+</menu>

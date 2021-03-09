@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#66DD00</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="buttongreen">#66F9B0</color>
+    <color name="startcolor">#93FF93</color>
+    <color name="centercolor">#28FF28</color>
+    <color name="endcolor">#00A600</color>
+    <color name="admincolor">#6A6AFF</color>
+    <color name="admintextcolor">#0000E3</color>
+
+
+</resources>

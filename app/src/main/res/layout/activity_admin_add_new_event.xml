@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddNewProductActivity"
+    android:background="@drawable/admin_bg">
+
+    <ImageView
+        android:id="@+id/select_event_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/social" />
+
+    <EditText
+        android:id="@+id/event_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_event_image"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/admin_input_design"
+        android:hint="請輸入活動名稱..."
+        android:textColorHint="@color/admintextcolor"
+        android:inputType="textMultiLine"
+        android:padding="20dp" />
+    <EditText
+        android:id="@+id/event_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_name"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/admin_input_design"
+        android:hint="請輸入活動地點..."
+        android:textColorHint="@color/admintextcolor"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        />
+
+    <EditText
+        android:id="@+id/event_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_place"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/admin_input_design"
+        android:hint="請輸入活動敘述..."
+        android:textColorHint="@color/admintextcolor"
+        android:inputType="textMultiLine"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/event_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_description"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/admin_input_design"
+        android:hint="請輸入活動獎勵金額..."
+        android:textColorHint="@color/admintextcolor"
+        android:inputType="number"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/event_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_price"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/admin_input_design"
+        android:hint="請輸入活動可參加人數..."
+        android:textColorHint="@color/admintextcolor"
+        android:inputType="number"
+        android:padding="20dp" />
+
+
+    <EditText
+        android:id="@+id/event_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_people"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/admin_input_design"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="請輸入活動日期..."
+        android:textColorHint="@color/admintextcolor"
+        android:inputType="none"
+        android:padding="20dp" />
+
+    <Button
+        android:id="@+id/add_new_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_date"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/admin_button"
+        android:padding="17dp"
+        android:text="新增活動"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+</RelativeLayout>
